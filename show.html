@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel ="stylesheet">
+    <title>show</title>
+  </head>
+  <body>
+    <br><br>
+    <main id="display"></main><br><br>
+    <button id="btn">Show Favourite</button>
+  
+
+    <script>
+      let disp =document.querySelector("#display")
+      let btn = document.querySelector("#btn")
+
+      function showFavourite (favour) {
+        let result = document.createElement('p')
+            result.innerText = favour + `${""}` + `${' is the most Favoured Book'}`
+            disp.appendChild(result)
+        }
+
+     btn.onclick= function pingServerForFavourite(event){
+            let request = new XMLHttpRequest()
+            request.open("GET", '/getFavourite',)
+
+            request.onload = function () {
+                if (this.status >= 200 && this.status < 400) {
+                    let favour = JSON.parse(this.response)
+                    showFavourite(favour)
+                }
+            }
+
+            request.onerror = function () {
+                console.log(status)
+            }
+
+            request.send()
+        }
+    
+      </script>
+  </body>
+</html>  

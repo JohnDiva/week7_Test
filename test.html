@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <title>Favourite Books</title>
+    </head>
+    <body>
+        <h1>Book Rating App</h1>
+        <div id ="page">
+            <form action ='/saveBook' method="GET">
+                <label for ="name">Name</label>
+                <input autofocus id ="name" type="text" name ="name" value="" placeholder="Enter Your Name"><br><br>
+                <label for="book">Book Name</label>
+                <input autofocus id ="book" type ="text" name="bookTitle" value="" placeholder="Book Title"><br><br>
+                <input id ="sbmt" type="submit" value="Submit">
+            </form>
+            <section id ="cBooks"> 
+                <ul>Top Rated Books<br><br>
+                    <li>Harry Potter</li>
+                    <li>Shrek</li>
+                    <li>Jack and Jill</li>
+                    <li>Mr Bean</li>
+                    <li>Mr Bones</li>
+                </ul>
+            </section>
+        </div>
+        
+        <br>
+        <A href="/show">Click to Show Most Favoured Book</A>
+    </body>
+</html>

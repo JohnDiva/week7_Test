@@ -1,0 +1,70 @@
+body {
+    background-color: burlywood;
+}
+
+#page {
+display: flex;
+padding-left: 20%;
+justify-content: space-around;
+width:60%
+}
+form {
+background-color: rgb(192, 235, 235);
+width:fit-content;
+border-radius: 2%;
+padding:2%;
+font-size: x-large;
+font-family: monospace;
+}
+
+section {
+width:40%;
+height:50%;
+background-color:rgb(160, 4, 4);
+color:rgb(235, 231, 231);
+font-family:serif;
+border-radius: 90%;
+}
+
+ul{
+padding-left:40%;
+}
+
+h1 {
+text-align: center;
+ font-size: 60px;
+}
+
+A {
+padding-left:38%;
+color:rgb(23, 23, 131);
+font-weight: bold;
+font-size: x-large;
+}
+
+#sbmt {
+background-color: rgb(3, 31, 31);
+color:white;
+}
+
+A:hover {
+color: purple;
+}
+
+#btn {
+    background-color: rgb(4, 4, 53);
+    color:gainsboro;
+    font-size: xx-large;
+    border:solid blue;
+    border-radius: 10%;
+  }
+
+  #btn:hover {
+    background-color: rgb(54, 1, 1);
+    color: seashell;
+  }
+ #display {
+   font-size: xx-large;
+   font-weight: bold;
+  
+ }
